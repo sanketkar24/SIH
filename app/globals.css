@@ -15,7 +15,27 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+/* @font-face {
+  font-family: "GeneralSans-Regular";
+  src: url('../fonts/GeneralSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  } */
+  
+  /* @font-face {
+  font-family: "Rubik";
+  src: url('../fonts/rubik/Rubik-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+  }
+  
+  @font-face {
+  font-family: "Rubik";
+  src: url('../fonts/rubik/Rubik-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+  }
+   */
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
