@@ -3,12 +3,14 @@
 import React from "react";
 import Logo from "../../images/logo_white.png";
 import SideImage from "../../images/login_img.png";
+import Brand_side_img from "../../images/brand_side_img.png";
+import BlueLogo from "../../images/logo_blue.png";
 import Image from "next/image";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import {SiFacebook} from "react-icons/si";
 
-const Signup = () => {
+const Signup = (props) => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -26,15 +28,21 @@ const Signup = () => {
     event.preventDefault();
     console.log(formData);
   };
+  console.log('Hellooooooooooooo',props.check);
 
   return (
     <div className="flex justify-center items-center h-screen w-screen">
       <div className="flex w-full h-full  bg-white">
         <div className="sm:hidden md:block flex-1 relative h-screen">
           <div className="relative h-full">
-            <Image src={SideImage} alt="Logo" layout="fill" objectFit="cover" />
+            <Image
+              src={props.check == "Brand" ? Brand_side_img : SideImage}
+              alt="Logo"
+              layout="fill"
+              objectFit="cover"
+            />
             <div className="absolute top-0 left-0 p-4">
-              <Image src={Logo} alt="Logo" />
+              <Image src={props.check=="Brand"?Logo:BlueLogo} alt="Logo" />
             </div>
             <div className="absolute bottom-10 left-10 p-4">
               <div
@@ -51,7 +59,19 @@ const Signup = () => {
                 Explore your Favourite
               </div>
               <div className="md:flex">
-                <div
+                {props.check=="Brand"?<div
+                  style={{
+                    color:
+                      "var(--colour-pallete-secondary-1-s-100, var(--colour-pallete-secondary-1-s-100, #F6F6F6))",
+                    fontFamily: "General Sans",
+                    fontSize: "40px",
+                    fontStyle: "normal",
+                    fontWeight: 600,
+                    lineHeight: "125%" /* 50px */,
+                  }}
+                >
+                  Brands on
+                </div>:<div
                   style={{
                     color:
                       "var(--colour-pallete-secondary-1-s-100, var(--colour-pallete-secondary-1-s-100, #F6F6F6))",
@@ -63,7 +83,7 @@ const Signup = () => {
                   }}
                 >
                   Stores on
-                </div>
+                </div>}
                 <div
                   style={{
                     color:

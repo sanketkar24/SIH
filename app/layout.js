@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from './components/navigation/navbar'
-import Signup from './login_signup/store_login.js';
+import Signup from './login_signup/login.js';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
     //     {children}
     //     </body> */}
     // </html>
-    <Signup />
+    <Signup  check="Bran" />
   );
 }
+{/* <Signup check="Brand" /> */}
