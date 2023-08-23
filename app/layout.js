@@ -1,5 +1,7 @@
 import './globals.css'
 import Navbar from './components/navigation/navbar'
+
+import Signup from './login_signup/login.js';
 import Footer from './components/footer'
 import localFont  from '@next/font/local'
 
