@@ -8,9 +8,9 @@ import BlueLogo from "../../images/logo_blue.png";
 import Image from "next/image";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
-import {SiFacebook} from "react-icons/si";
+import { SiFacebook } from "react-icons/si";
 
-const Login = (props) => {
+const Signup = (props) => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -28,7 +28,6 @@ const Login = (props) => {
     event.preventDefault();
     console.log(formData);
   };
-  console.log('Hellooooooooooooo',props.check);
 
   return (
     <div className="flex justify-center items-center h-screen w-screen">
@@ -121,21 +120,40 @@ const Login = (props) => {
                 lineHeight: "150%" /* 27px */,
               }}
             >
-              LOGIN
+              REGISTER
             </div>
-            <div
-              style={{
-                color:
-                  "var(--colour-pallete-neutrals-n-900, var(--colour-pallete-neutrals-n-900, #000))",
-                fontFamily: "General Sans",
-                fontSize: "40px",
-                fontStyle: "normal",
-                fontWeight: 600,
-                lineHeight: "125%" /* 50px */,
-                marginTop: "20px",
-              }}
-            >
-              Welcome Back!
+            <div className="flex">
+              <div
+                style={{
+                  color:
+                    "var(--colour-pallete-neutrals-n-900, var(--colour-pallete-neutrals-n-900, #000))",
+                  fontFamily: "General Sans",
+                  fontSize: "40px",
+                  fontStyle: "normal",
+                  fontWeight: 600,
+                  lineHeight: "125%" /* 50px */,
+                  marginTop: "20px",
+                }}
+              >
+                Welcome to&nbsp;
+              </div>
+              <div
+                style={{
+                  color:
+                    "var(--colour-pallete-neutrals-n-900, var(--colour-pallete-neutrals-n-900, #22B2E6))",
+                  fontFamily: "General Sans",
+                  fontSize: "40px",
+                  fontStyle: "normal",
+                  fontWeight: 600,
+                  lineHeight: "125%" /* 50px */,
+                  marginTop: "20px",
+                }}
+              >
+                Baylink!
+              </div>
+            </div>
+            <div className="text-secondary-2-s-200 font-GeneralSans text-base font-normal leading-6 mt-6">
+              Register using your email or mobile number
             </div>
             <div style={{ marginTop: "20px" }}>
               <div
@@ -149,7 +167,72 @@ const Login = (props) => {
                   lineHeight: "150%" /* 24px */,
                 }}
               >
-                Email or mobile number
+                Brand Name*
+              </div>
+              <input
+                type="text"
+                className="border border-gray-300 p-2 rounded-lg w-full"
+                placeholder="Enter store name"
+                style={{ marginTop: "10px" }}
+              />
+            </div>
+            <div className="flex justify-between">
+              <div className="w-1/2 mr-4" style={{ marginTop: "20px" }}>
+                <div
+                  style={{
+                    color:
+                      "var(--colour-pallete-secondary-2-s-300, var(--colour-pallete-secondary-2-s-300, #0F0F10))",
+                    fontFamily: "General Sans",
+                    fontSize: "16px",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    lineHeight: "150%" /* 24px */,
+                  }}
+                >
+                  First Name*
+                </div>
+                <input
+                  type="text"
+                  className="border border-gray-300 p-2 rounded-lg w-full"
+                  placeholder="Enter first name"
+                  style={{ marginTop: "10px" }}
+                />
+              </div>
+              <div className="w-1/2" style={{ marginTop: "20px" }}>
+                <div
+                  style={{
+                    color:
+                      "var(--colour-pallete-secondary-2-s-300, var(--colour-pallete-secondary-2-s-300, #0F0F10))",
+                    fontFamily: "General Sans",
+                    fontSize: "16px",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    lineHeight: "150%" /* 24px */,
+                  }}
+                >
+                  Last Name*
+                </div>
+                <input
+                  type="text"
+                  className="border border-gray-300 p-2 rounded-lg w-full"
+                  placeholder="Enter last name"
+                  style={{ marginTop: "10px" }}
+                />
+              </div>
+            </div>
+            <div style={{ marginTop: "20px" }}>
+              <div
+                style={{
+                  color:
+                    "var(--colour-pallete-secondary-2-s-300, var(--colour-pallete-secondary-2-s-300, #0F0F10))",
+                  fontFamily: "General Sans",
+                  fontSize: "16px",
+                  fontStyle: "normal",
+                  fontWeight: 400,
+                  lineHeight: "150%" /* 24px */,
+                }}
+              >
+                Email or mobile number*
               </div>
               <input
                 type="text"
@@ -170,7 +253,7 @@ const Login = (props) => {
                   lineHeight: "150%" /* 24px */,
                 }}
               >
-                Password
+                Password*
               </div>
               <input
                 type="password"
@@ -179,15 +262,24 @@ const Login = (props) => {
                 style={{ marginTop: "10px" }}
               />
             </div>
-            <div
-              className="flex justify-between w-full"
-              style={{ marginTop: "10px" }}
-            >
-              <div className="w-full text-right text-primary-p-500 font-general-sans text-sm font-normal leading-6">
-                <a href="#" className="hover:underline text-blue-500">
-                  Forgot Password?
-                </a>
-              </div>
+            
+            <div className="flex items-center mt-4">
+                <input type="checkbox" id="terms-checkbox" className="mr-2" />
+                <label
+                    htmlFor="terms-checkbox"
+                    className="text-sm font-normal leading-6"
+                    style={{
+                        color: "var(--colour-pallete-secondary-2-s-200, var(--colour-pallete-secondary-2-s-200, #383839))",
+                        fontFamily: "General Sans",
+                        fontSize: "16px",
+                        fontStyle: "normal",
+                        fontWeight: 400,
+                        lineHeight: "150%" /* 24px */
+                    }}
+                >
+                    I agree to the <a href="#">Terms</a> and{" "}
+                    <a href="#">Privacy Policy</a>
+                </label>
             </div>
             <div className="flex justify-center mt-4">
               <button
@@ -198,7 +290,7 @@ const Login = (props) => {
                   boxShadow: "0px 2px 0px 0px rgba(0, 0, 0, 0.04)",
                 }}
               >
-                Sign In
+                Register
               </button>
             </div>
             <div
@@ -216,21 +308,20 @@ const Login = (props) => {
                   margin: "0px",
                 }}
               />
-              <div
-                style={{
-                  margin: "0px 10px",
-                  color:
-                    "var(--colour-pallete-neutrals-n-60, var(--colour-pallete-neutrals-n-60, #B0B0B0))",
-                  textAlign: "center",
-                  fontFamily: "General Sans",
-                  fontSize: "14px",
-                  fontStyle: "normal",
-                  fontWeight: 400,
-                  lineHeight: "125%" /* 17.5px */,
+            <div 
+                style={{ 
+                    margin: "0px 10px",
+                    color: "var(--colour-pallete-neutrals-n-60, var(--colour-pallete-neutrals-n-60, #B0B0B0))",
+                    textAlign: "center",
+                    fontFamily: "General Sans",
+                    fontSize: "14px",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    lineHeight: "125%" /* 17.5px */
                 }}
-              >
+            >
                 Or
-              </div>
+            </div>
               <hr
                 style={{
                   width: "100%",
@@ -270,7 +361,7 @@ const Login = (props) => {
                   lineHeight: "150%" /* 21px */,
                 }}
               >
-                <div>Don't have an account?&nbsp;</div>
+                <div>Already have an account?&nbsp;</div>
               </div>
               <div
                 className="flex justify-center items-center mt-4"
@@ -285,7 +376,7 @@ const Login = (props) => {
                   marginTop: "20px",
                 }}
               >
-                Sign Up
+                Login
               </div>
             </div>
           </div>
@@ -295,4 +386,4 @@ const Login = (props) => {
   );
 };
 
-export default Login;
+export default Signup;
