@@ -34,7 +34,7 @@ const Signup = (props) => {
   return (
     <div
       className="flex justify-center items-center h-screen w-screen"
-      style={{ fontFamily: "General Sans" }}
+      style={{ fontFamily: "General Sans-Regular" }}
     >
       <div className="flex w-full h-full  bg-white">
         <div className="sm:hidden md:block flex-1 relative h-screen">
