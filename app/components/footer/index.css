@@ -9,6 +9,7 @@
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 2rem;
+    z-index: 9999;
 }
 .footerDivision{
     display: flex;
