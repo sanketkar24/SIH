@@ -1,9 +1,8 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-import Navbar from './components/navigation/navbar'
-import Login from './login_signup/login.js';
-import Signup from "./login_signup/signup.js";
-const inter = Inter({ subsets: ['latin'] })
+import Navbar from "./components/navigation/navbar";
+import Footer from './components/footer'
+import localFont  from '@next/font/local'
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,12 +11,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    // <html lang="en">
-    //   {/* <body className={inter.className}>
-    //     {children}
-    //     </body> */}
-    // </html>
-    <Signup  check="Brand" />
-  );
+    <html lang="en">
+      <body>
+        <Navbar />
+        {children}
+        < Footer />
+      </body>  
+    </html>
+  )
 }
-{/* <Signup check="Brand" /> */}
