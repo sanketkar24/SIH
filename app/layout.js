@@ -1,5 +1,5 @@
 import './globals.css'
-import Navbar from './components/navigation/navbar'
+import Navbar from "./components/navigation/navbar";
 
 import Signup from './login_signup/login.js';
 import Footer from './components/footer'
@@ -12,7 +12,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    // <html lang="en" className={`${generalSansBold.variable} ${generalSansRegular.variable} ${generalSansLight.variable}`}>
     <html lang="en">
       <body>
         <Navbar />
