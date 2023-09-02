@@ -9,7 +9,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import {SiFacebook} from "react-icons/si";
-import './login.css'
+import './page.css'
 
 const Signup = (props) => {
   const [formData, setFormData] = useState({
@@ -34,7 +34,7 @@ const Signup = (props) => {
     <div
       className="flex justify-center items-center h-screen w-screen"
       style={{
-        fontFamily: "General Sans",
+        fontFamily: "General Sans Regular",
       }}
     >
       <div className="flex w-full h-full  bg-white">
@@ -75,10 +75,10 @@ const Signup = (props) => {
         </div>
         <div className="flex-1 flex flex-col justify-center items-center p-8">
           <div className="mt-1/2 w-2/3 ">
-            <div className="text-primary-p-500 font-medium text-lg blue-text">
+            <div className="text-primary-p-500 font-bold text-lg blue-text">
               LOGIN
             </div>
-            <div className="text-black font-semibold text-4xl my-5">
+            <div className="text-black font-bold text-4xl my-5">
               Welcome Back!
             </div>
             <div className="mt-4">
@@ -136,7 +136,7 @@ const Signup = (props) => {
 
               <button className="border border-gray-300 p-2 rounded-lg w-full items-center justify-center">
                 <SiFacebook size={24} className="inline-block mr-2" />
-                facebook
+                Facebook
               </button>
             </div>
             <div className="flex w-full justify-center items-center mt-4">
