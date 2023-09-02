@@ -29,8 +29,12 @@ export default function RootLayout({ children }) {
   return (
     // <html lang="en" className={`${generalSansBold.variable} ${generalSansRegular.variable} ${generalSansLight.variable}`}>
     <html lang="en">
+<<<<<<< HEAD
+      <body className={inter.className}>
+=======
       <body>
         <Navbar />
+>>>>>>> main
         {children}
         < Footer />
       </body>  
