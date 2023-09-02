@@ -9,7 +9,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
-import "./signup.css"
+import "./page.css"
 
 
 const Signup = (props) => {
@@ -34,7 +34,7 @@ const Signup = (props) => {
   return (
     <div
       className="flex justify-center items-center h-screen w-screen"
-      style={{ fontFamily: "General Sans-Regular" }}
+      style={{ fontFamily: "General Sans Regular", paddingTop: '4rem'}}
     >
       <div className="flex w-full h-full  bg-white">
         <div className="sm:hidden md:block flex-1 relative h-screen">
@@ -71,7 +71,7 @@ const Signup = (props) => {
                     style={{
                       color:
                         "var(--colour-pallete-secondary-1-s-100, var(--colour-pallete-secondary-1-s-100, #F6F6F6))",
-                      fontFamily: "General Sans",
+                      fontFamily: "General Sans Regular",
                       fontSize: "40px",
                       fontStyle: "normal",
                       fontWeight: 600,
@@ -85,7 +85,7 @@ const Signup = (props) => {
                     style={{
                       color:
                         "var(--colour-pallete-secondary-1-s-100, var(--colour-pallete-secondary-1-s-100, #F6F6F6))",
-                      fontFamily: "General Sans",
+                      fontFamily: "General Sans Regular",
                       fontSize: "40px",
                       fontStyle: "normal",
                       fontWeight: 600,
@@ -99,7 +99,7 @@ const Signup = (props) => {
                   style={{
                     color:
                       "var(--colour-pallete-primary-p-300, var(--colour-pallete-primary-p-300, #22B2E6))",
-                    fontFamily: "General Sans",
+                    fontFamily: "General Sans Regular",
                     fontSize: "40px",
                     fontStyle: "normal",
                     fontWeight: 600,
@@ -117,7 +117,7 @@ const Signup = (props) => {
             <div
               // className={`${generalSansBold.variable} ${generalSansRegular.variable} ${generalSansLight.variable}`}
               id="heading-2"
-              style={{ fontFamily: "General Sans" }}
+              style={{ fontFamily: "General Sans Regular" }}
             >
               REGISTER
             </div>
