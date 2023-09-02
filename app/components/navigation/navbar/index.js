@@ -15,8 +15,8 @@ const Navbar = () => {
                 <Link className="hover:text-sky-500 hover:underline-offset-8 hover:underline " href="/listings">Listing</Link>
                 <Link className="hover:text-sky-500 hover:underline-offset-8 hover:underline " href="/about">List Your Shelf</Link>
                 <Link className="hover:text-sky-500 hover:underline-offset-8 hover:underline " href="/contact">About Us</Link>
-                <Link className="hover:text-sky-500 hover:underline-offset-8 hover:underline " href="/contact">Sign Up</Link>
-                <Button type="primary" className="bg-sky-500 text-base">Log In</Button>
+                <Link className="hover:text-sky-500 hover:underline-offset-8 hover:underline " href="/signup">Sign Up</Link>
+                <Button type="primary" className="bg-sky-500 text-base" href="/login">Log In</Button>
             </div>
         </div>
     </>
