@@ -15,6 +15,10 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+@font-face {
+  font-family: "General Sans-Regular";
+  src: url("../public/fonts/GeneralSans-Regular.ttf");
+}
 
 @font-face {
   font-family: 'General Sans Bold';
