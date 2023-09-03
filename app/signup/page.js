@@ -33,11 +33,10 @@ const Signup = (props) => {
 
   return (
     <div
-      className="flex justify-center items-center h-screen w-screen"
-      style={{ fontFamily: "General Sans Regular", paddingTop: '4rem'}}
+      className="flex justify-center items-center w-screen"
     >
       <div className="flex w-full h-full  bg-white">
-        <div className="sm:hidden md:block flex-1 relative h-screen">
+        <div className="hidden tablet:block flex-1 relative h-screen">
           <div className="relative h-full">
             <Image
               src={props.check == "Brand" ? Brand_side_img : SideImage}
@@ -56,7 +55,7 @@ const Signup = (props) => {
                 style={{
                   color:
                     "var(--colour-pallete-secondary-1-s-100, var(--colour-pallete-secondary-1-s-100, #F6F6F6))",
-                  fontFamily: "General Sans",
+                  fontFamily: "General Sans Regular",
                   fontSize: "40px",
                   fontStyle: "normal",
                   fontWeight: 600,
@@ -121,7 +120,7 @@ const Signup = (props) => {
             >
               REGISTER
             </div>
-            <div className="flex ">
+            <div className="laptop:flex ">
               <div className="heading-1">Welcome to&nbsp;</div>
               <div
                 style={{
