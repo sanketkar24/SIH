@@ -10,7 +10,7 @@ import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
 import "./page.css"
-
+import Link from "next/link";
 
 const Signup = (props) => {
   const [formData, setFormData] = useState({
@@ -219,11 +219,12 @@ const Signup = (props) => {
                 <div className="flex justify-center mt-4 text-gray-500 text-center font-GeneralSans text-sm font-normal leading-5">
                 <div>Already have an account?&nbsp;</div>
               </div>
-              <div
+              <Link
                 className="flex justify-center items-center mt-4 text-primary-p-500 font-GeneralSans font-medium text-sm blue-color"
+                href='/login'
               >
                 Login
-              </div>
+              </Link>
             </div>
           </div>
         </div>
