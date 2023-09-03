@@ -1,10 +1,10 @@
 // create an signup page
 "use client";
 import React from "react";
-import Logo from "../../images/logo_white.png";
-import SideImage from "../../images/login_img.png";
-import Brand_side_img from "../../images/brand_side_img.png";
-import BlueLogo from "../../images/logo_blue.png";
+import Logo from "../../../images/logo_white.png";
+import SideImage from "../../../images/login_img.png";
+import Brand_side_img from "../../../images/brand_side_img.png";
+import BlueLogo from "../../../images/logo_blue.png";
 import Image from "next/image";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
@@ -34,6 +34,10 @@ const Signup = (props) => {
   return (
     <div
       className="flex justify-center items-center w-screen"
+      style={{
+        height: "fit-content",
+      }
+      }
     >
       <div className="flex w-full h-full  bg-white">
         <div className="hidden tablet:block flex-1 relative h-screen">

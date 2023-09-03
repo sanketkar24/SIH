@@ -1,10 +1,10 @@
 // create an signup page
 "use client";
 import React from "react";
-import Logo from "../../images/logo_white.png";
-import SideImage from "../../images/login_img.png";
-import Brand_side_img from "../../images/brand_side_img.png";
-import BlueLogo from "../../images/logo_blue.png";
+import Logo from "../../../images/logo_white.png";
+import SideImage from "../../../images/login_img.png";
+import Brand_side_img from "../../../images/brand_side_img.png";
+import BlueLogo from "../../../images/logo_blue.png";
 import Image from "next/image";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
@@ -12,7 +12,7 @@ import {SiFacebook} from "react-icons/si";
 import './page.css'
 import Link from "next/link";
 
-const Signup = (props) => {
+const Login = (props) => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -36,6 +36,7 @@ const Signup = (props) => {
       className="flex justify-center items-center h-screen w-screen"
       style={{
         fontFamily: "General Sans Regular",
+        height: 'fit-content'
       }}
     >
       <div className="flex w-full h-full  bg-white">
@@ -155,4 +156,4 @@ const Signup = (props) => {
   );
 };
 
-export default Signup;
+export default Login;
