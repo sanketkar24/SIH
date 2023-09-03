@@ -10,6 +10,7 @@ import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import {SiFacebook} from "react-icons/si";
 import './page.css'
+import Link from "next/link";
 
 const Signup = (props) => {
   const [formData, setFormData] = useState({
@@ -38,7 +39,7 @@ const Signup = (props) => {
       }}
     >
       <div className="flex w-full h-full  bg-white">
-        <div className="sm:hidden md:block flex-1 relative h-screen">
+        <div className="hidden tablet:block md:block flex-1 relative h-screen">
           <div className="relative h-full">
             <Image
               src={props.check == "Brand" ? Brand_side_img : SideImage}
@@ -143,9 +144,9 @@ const Signup = (props) => {
               <div className="flex justify-center mt-4 text-secondary-2-s-200 font-general-sans text-base font-normal leading-6 text-center">
                 <div>Don't have an account?&nbsp;</div>
               </div>
-              <div className="flex justify-center items-center mt-4 text-primary-p-500 font-general-sans text-sm font-medium leading-6 blue-text">
+              <Link className="flex justify-center items-center mt-4 text-primary-p-500 font-general-sans text-sm font-medium leading-6 blue-text" href='/signup'>
                 Sign Up
-              </div>
+              </Link>
             </div>
           </div>
         </div>
