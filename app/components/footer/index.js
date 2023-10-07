@@ -1,5 +1,6 @@
 import React from 'react'
 import './index.css'
+import { FaTwitterSquare, FaInstagramSquare, FaLinkedin } from 'react-icons/fa'
 function Footer() {
   return (
     <div className='footer'>
@@ -7,9 +8,9 @@ function Footer() {
         <div className='footerTextHeading'>
           Find Your
           <br />
-          Brand's Perfect
+          Mental
           <br />
-          Shelf!
+          Peace!
         </div>
         <div className='footerTextSubheading'>
           Search • Find • Elevate
@@ -34,17 +35,23 @@ function Footer() {
           Contact Us
         </div>
         <div className='footerTextSubheading'>
-          connect@baylink.in
+          wecare@gmail.com
           <br />
-          Innovation center, MIT Manipal
+          MIT Manipal
           <br />
-          +91 7838687511
+          +91 8591235483
         </div>
       </div>
       <div className='footerDivision'>
         <div className='footerTextHeading'>
           Follow Us On
         </div>
+        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'left'}}>
+        <FaTwitterSquare className='footerIcon' size={'2rem'} />
+        <FaInstagramSquare className='footerIcon' size={'2rem'} />
+        <FaLinkedin className='footerIcon' size={'2rem'} />
+        </div>
+        
       </div>
     </div>
   )

@@ -11,6 +11,8 @@ import { FcGoogle } from "react-icons/fc";
 import {SiFacebook} from "react-icons/si";
 import './page.css'
 import Link from "next/link";
+import Lottie from "lottie-react";
+import animation from '../../../public/animation2.json'
 
 const Login = (props) => {
   const [formData, setFormData] = useState({
@@ -41,39 +43,7 @@ const Login = (props) => {
     >
       <div className="flex w-full h-full  bg-white">
         <div className="hidden tablet:block md:block flex-1 relative h-screen">
-          <div className="relative h-full">
-            <Image
-              src={props.check == "Brand" ? Brand_side_img : SideImage}
-              alt="Logo"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute top-0 left-0 p-4">
-              <Image
-                src={props.check == "Brand" ? Logo : BlueLogo}
-                alt="Logo"
-              />
-            </div>
-            <div className="absolute bottom-10 left-10 p-4">
-              <div className="text-gray-100 font-bold text-4xl">
-                Explore your Favourite
-              </div>
-              <div className="md:flex">
-                {props.check == "Brand" ? (
-                  <div className="text-gray-100 font-semibold text-4xl">
-                    Brands on
-                  </div>
-                ) : (
-                  <div className="text-white font-semibold text-4xl">
-                    Stores on
-                  </div>
-                )}
-                <div className="text-primary-p-300 font-bold text-4xl blue-brand">
-                  &nbsp;Baylink!
-                </div>
-              </div>
-            </div>
-          </div>
+          <Lottie animationData={animation} loop={true} />
         </div>
         <div className="flex-1 flex flex-col justify-center items-center p-8">
           <div className="mt-1/2 w-2/3 ">

@@ -1,9 +1,47 @@
 {
     "data": [
         {
-            "imageSrc": "https://hd.wallpaperswide.com/thumbs/anime_food_store-t2.jpg",
-            "price": "₹5000",
-            "shopName": "Bablu Store",
+            "imageSrc": "https://thumbs.dreamstime.com/b/indian-female-medical-doctor-portrait-uniform-hand-holding-test-report-standing-white-background-81003009.jpg",
+            "price": "Councellor",
+            "shopName": "Dr Kamla Reddy",
+            "location": "Eshwar Nagar",
+            "area": "Manipal",
+            "footfall": "1000",
+            "address":{
+                "lat": "13.3525",
+                "long": "74.7928"
+            },
+            "tag":"Free Consultation"
+        },
+        {
+            "imageSrc": "https://img.freepik.com/premium-photo/medical-concept-indian-beautiful-female-doctor-white-coat-with-stethoscope-waist-up-medical-student-woman-hospital-worker-looking-camera-smiling-studio-blue-background_185696-621.jpg",
+            "price": "Councellor",
+            "shopName": "Dr Aishwarya Naik",
+            "location": "Eshwar Nagar",
+            "area": "Psychologist",
+            "footfall": "1000",
+            "address":{
+                "lat": "28.612894",
+                "long": "77.229446"
+            }
+        },
+        {
+            "imageSrc": "https://thumbs.dreamstime.com/b/indian-doctor-mature-male-medical-standing-inside-hospital-handsome-model-portrait-46325210.jpg",
+            "price": "Psychiatrist",
+            "shopName": "Dr Radha Muneer Garg",
+            "location": "Eshwar Nagar",
+            "area": "Manipal",
+            "footfall": "1000",
+            "address":{
+                "lat": "28.612894",
+                "long": "77.229446"
+            },
+            "tag": "20% Discount"
+        },
+        {
+            "imageSrc": "https://thumbs.dreamstime.com/b/indian-female-medical-doctor-portrait-uniform-hand-holding-test-report-standing-white-background-81003009.jpg",
+            "price": "Councellor",
+            "shopName": "Dr Kamla Reddy",
             "location": "Eshwar Nagar",
             "area": "Manipal",
             "footfall": "1000",
@@ -13,21 +51,21 @@
             }
         },
         {
-            "imageSrc": "https://hd.wallpaperswide.com/thumbs/anime_food_store-t2.jpg",
-            "price": "₹5000",
-            "shopName": "Bablu Store",
+            "imageSrc": "https://img.freepik.com/premium-photo/medical-concept-indian-beautiful-female-doctor-white-coat-with-stethoscope-waist-up-medical-student-woman-hospital-worker-looking-camera-smiling-studio-blue-background_185696-621.jpg",
+            "price": "Councellor",
+            "shopName": "Dr Aishwarya Naik",
             "location": "Eshwar Nagar",
-            "area": "Manipal",
+            "area": "Psychologist",
             "footfall": "1000",
             "address":{
-                "lat": "13.612894",
+                "lat": "28.612894",
                 "long": "77.229446"
             }
         },
         {
-            "imageSrc": "https://hd.wallpaperswide.com/thumbs/anime_food_store-t2.jpg",
-            "price": "₹5000",
-            "shopName": "Bablu Store",
+            "imageSrc": "https://thumbs.dreamstime.com/b/indian-doctor-mature-male-medical-standing-inside-hospital-handsome-model-portrait-46325210.jpg",
+            "price": "Psychiatrist",
+            "shopName": "Dr Radha Muneer Garg",
             "location": "Eshwar Nagar",
             "area": "Manipal",
             "footfall": "1000",
@@ -37,9 +75,9 @@
             }
         },
         {
-            "imageSrc": "https://hd.wallpaperswide.com/thumbs/anime_food_store-t2.jpg",
-            "price": "₹5000",
-            "shopName": "Bablu Store",
+            "imageSrc": "https://thumbs.dreamstime.com/b/indian-female-medical-doctor-portrait-uniform-hand-holding-test-report-standing-white-background-81003009.jpg",
+            "price": "Councellor",
+            "shopName": "Dr Kamla Reddy",
             "location": "Eshwar Nagar",
             "area": "Manipal",
             "footfall": "1000",
@@ -49,9 +87,21 @@
             }
         },
         {
-            "imageSrc": "https://hd.wallpaperswide.com/thumbs/anime_food_store-t2.jpg",
-            "price": "₹5000",
-            "shopName": "Bablu Store",
+            "imageSrc": "https://img.freepik.com/premium-photo/medical-concept-indian-beautiful-female-doctor-white-coat-with-stethoscope-waist-up-medical-student-woman-hospital-worker-looking-camera-smiling-studio-blue-background_185696-621.jpg",
+            "price": "Councellor",
+            "shopName": "Dr Aishwarya Naik",
+            "location": "Eshwar Nagar",
+            "area": "Psychologist",
+            "footfall": "1000",
+            "address":{
+                "lat": "28.612894",
+                "long": "77.229446"
+            }
+        },
+        {
+            "imageSrc": "https://thumbs.dreamstime.com/b/indian-doctor-mature-male-medical-standing-inside-hospital-handsome-model-portrait-46325210.jpg",
+            "price": "Psychiatrist",
+            "shopName": "Dr Radha Muneer Garg",
             "location": "Eshwar Nagar",
             "area": "Manipal",
             "footfall": "1000",
@@ -61,9 +111,9 @@
             }
         },
         {
-            "imageSrc": "https://hd.wallpaperswide.com/thumbs/anime_food_store-t2.jpg",
-            "price": "₹5000",
-            "shopName": "Bablu Store",
+            "imageSrc": "https://thumbs.dreamstime.com/b/indian-female-medical-doctor-portrait-uniform-hand-holding-test-report-standing-white-background-81003009.jpg",
+            "price": "Councellor",
+            "shopName": "Dr Kamla Reddy",
             "location": "Eshwar Nagar",
             "area": "Manipal",
             "footfall": "1000",
@@ -73,11 +123,11 @@
             }
         },
         {
-            "imageSrc": "https://hd.wallpaperswide.com/thumbs/anime_food_store-t2.jpg",
-            "price": "₹5000",
-            "shopName": "Bablu Store",
+            "imageSrc": "https://img.freepik.com/premium-photo/medical-concept-indian-beautiful-female-doctor-white-coat-with-stethoscope-waist-up-medical-student-woman-hospital-worker-looking-camera-smiling-studio-blue-background_185696-621.jpg",
+            "price": "Councellor",
+            "shopName": "Dr Aishwarya Naik",
             "location": "Eshwar Nagar",
-            "area": "Manipal",
+            "area": "Psychologist",
             "footfall": "1000",
             "address":{
                 "lat": "28.612894",
@@ -85,45 +135,9 @@
             }
         },
         {
-            "imageSrc": "https://hd.wallpaperswide.com/thumbs/anime_food_store-t2.jpg",
-            "price": "₹5000",
-            "shopName": "Bablu Store",
-            "location": "Eshwar Nagar",
-            "area": "Manipal",
-            "footfall": "1000",
-            "address":{
-                "lat": "28.612894",
-                "long": "77.229446"
-            }
-        },
-        {
-            "imageSrc": "https://hd.wallpaperswide.com/thumbs/anime_food_store-t2.jpg",
-            "price": "₹5000",
-            "shopName": "Bablu Store",
-            "location": "Eshwar Nagar",
-            "area": "Manipal",
-            "footfall": "1000",
-            "address":{
-                "lat": "28.612894",
-                "long": "77.229446"
-            }
-        },
-        {
-            "imageSrc": "https://hd.wallpaperswide.com/thumbs/anime_food_store-t2.jpg",
-            "price": "₹5000",
-            "shopName": "Bablu Store",
-            "location": "Eshwar Nagar",
-            "area": "Manipal",
-            "footfall": "1000",
-            "address":{
-                "lat": "28.612894",
-                "long": "77.229446"
-            }
-        },
-        {
-            "imageSrc": "https://hd.wallpaperswide.com/thumbs/anime_food_store-t2.jpg",
-            "price": "₹5000",
-            "shopName": "Bablu Store",
+            "imageSrc": "https://thumbs.dreamstime.com/b/indian-doctor-mature-male-medical-standing-inside-hospital-handsome-model-portrait-46325210.jpg",
+            "price": "Psychiatrist",
+            "shopName": "Dr Radha Muneer Garg",
             "location": "Eshwar Nagar",
             "area": "Manipal",
             "footfall": "1000",

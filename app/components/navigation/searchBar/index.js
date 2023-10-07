@@ -25,35 +25,6 @@ function SearchBar() {
 
   return (
     <div className="flex bg-white mb-40 space-x-0 border rounded-full p-2 tablet:w-[50%] w-[70%] ">
-      {/* First Dropdown */}
-      <select
-        className=" rounded p-2 w-[15%] border-r-2 text-xs "
-        value={selectedlocation}
-        onChange={(e) => setSelectedlocation(e.target.value)}
-      >
-        <option value="">Location</option>
-        {data.dataVal.map((location) => (
-          <option key={location.id} value={location.id}>
-            {location.location}
-          </option>   
-        ))}
-      </select>
-
-      {/* Second Dropdown */}
-      <select
-        className=" p-2 w-[15%] border-r-2 text-xs "
-        value={selectedlocation}
-        onChange={(e) => setSelectedlocation(e.target.value)}
-      >
-        <option value="">Category</option>
-        {data.dataVal.map((category) => (
-          <option key={category.id} value={category.id}>
-            {category.category}
-          </option>   
-        ))}
-      </select>
-
-      {/* Search Input */}
       <input
         type="text"
         className=" px-4 w-[60%] rounded-full text-sm"

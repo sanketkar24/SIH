@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import navbarLogo from "../../../../images/navbarLogo.png";
+import navbarLogo from "../../../../images/WeCareLogo.png";
 import { Button } from 'antd';
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -14,7 +14,7 @@ const Navbar = () => {
     <>
       <div className="w-full fixed bg-white flex flex-row justify-between py-4 px-10 m-0 border-b border-black" style={{ zIndex: "99999" }}>
         <div className="h-30 w-24 md:h-30 md:w-40">
-          <Image src={navbarLogo} alt="navbar logo" height={50} />
+          <Image src={navbarLogo} alt="navbar logo" height={35} />
         </div>
         <div className=" items-center hidden gap-10 tablet:flex">
           <Link
@@ -27,28 +27,37 @@ const Navbar = () => {
           </Link>
           <Link
             className="hover:text-sky-500 hover:underline-offset-8 hover:underline"
-            href="/listings"
-            onClick={() => handleLinkClick("/listings")}
-            style={activeLink === "/listings" ? { color: "#0E87D1" } : {}}
+            href="/doctors"
+            onClick={() => handleLinkClick("/doctors")}
+            style={activeLink === "/doctors" ? { color: "#0E87D1" } : {}}
           >
-            Listings
+            Doctors
           </Link>
           <Link
+            className="hover:text-sky-500 hover:underline-offset-8 hover:underline"
+            href="http://localhost:3000/"
+            target="_blank"
+            onClick={() => handleLinkClick("/Chat")}
+            style={activeLink === "/Chat" ? { color: "#0E87D1" } : {}}
+          >
+            Chat
+          </Link>
+          {/* <Link
             className="hover:text-sky-500 hover:underline-offset-8 hover:underline"
             href="/newList"
             onClick={() => handleLinkClick("/newList")}
             style={activeLink === "/newList" ? { color: "#0E87D1" } : {}}
           >
             List Your Shelf
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             className="hover:text-sky-500 hover:underline-offset-8 hover:underline"
             href="/about"
             onClick={() => handleLinkClick("/about")}
             style={activeLink === "/about" ? { color: "#0E87D1" } : {}}
           >
             About Us
-          </Link>
+          </Link> */}
           <Link
             className="hover:text-sky-500 hover:underline-offset-8 hover:underline"
             href="/signup"

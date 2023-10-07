@@ -12,9 +12,9 @@ function ListingMenu({onToggleChange}) {
   };
   return (
       <div className='listingMenu'>
-        <div className='buttonsDiv Left'>
+        <div className='buttonsDivListing Left'>
           <Button style={ buttonColor }>Price</Button>
-          <Button style={ buttonColor } >Footfall</Button>
+          {/* <Button style={ buttonColor } >Footfall</Button> */}
           <Button style={ buttonColor }>Location</Button>
           <Button style={ buttonColor }>All Filters</Button>
         </div>

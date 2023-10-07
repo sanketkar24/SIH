@@ -6,6 +6,7 @@ import Map from '../../components/map/index.js';
 import { Pagination } from 'antd';
 import data from '../../sampledata.json';
 import './page.css';
+import { Divider, Space, Tag } from 'antd';
 
 function Listings() {
     const apiData = data;
@@ -26,11 +27,11 @@ function Listings() {
     };
 
     const handleCardHover = (lat, long) => {
-        // Update latitude and longitude when hovering over a card
         setLatitude(lat);
-        console.log(lat, long)
+        console.log(lat, long);
         setLongitude(long);
     };
+
 
     const startIndex = (currentPage - 1) * pageSize;
     const endIndex = startIndex + pageSize;
@@ -48,6 +49,7 @@ function Listings() {
                                 {...item}
                                 address={item.address}
                                 onCardHover={handleCardHover} // Pass hover handler
+                                
                             />
                         ))}
                     </div>
